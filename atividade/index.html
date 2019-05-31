@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+	<meta charset="UTF-8">
+  	<meta name="description" content="">
+  	<meta name="keywords" content="HTML,CSS,,JavaScript">
+  	<meta name="author" content="André C">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src='js.js'></script>
+
+	<title>Formulário</title>
+
+
+</head>
+<body>
+
+	<form>
+
+		<fieldset>
+
+		<legend>Cadastro</legend>
+
+		<p>
+			<label>Nome:</label><br>
+			<input type="text" id="nome">
+		</p>
+		<p>
+			<label>Sobrenome:</label><br>
+			<input type="text" id="snome">
+		</p>
+		<p>
+			<label>Data de Nascimento:</label><br>
+			<input type="date" id="data">
+		</p>
+		<p>
+			<label>Sexo:</label><br>
+			<input type="radio" name="sexo">M
+			<input type="radio" name="sexo">F
+		</p>
+		<p>
+			<label>Curso:</label><br>
+			<select>
+				<option>Selecionar:</option>
+				<option>TADS</option>
+				<option>Matemática</option>
+				<option>Sistemas de Informação</option>
+				<option>Ciência da Computação</option>
+			</select>
+		</p>
+		<p>
+			<label>Áreas de interesse:</label><br>
+			<input type="checkbox" name="">Desenvolvimento Web <br>
+			<input type="checkbox" name="">Arduino <br>
+			<input type="checkbox" name="">Inteligência Artificial <br>
+			<input type="checkbox" name="">Redes <br>
+			<input type="checkbox" name="">Banco de Dados <br>
+			<input type="checkbox" name="">Big Data <br>
+			<input type="checkbox" name="">Analíse de Sistemas <br>
+			<input type="checkbox" name="">Estatística <br>
+			<input type="checkbox" name=""> <br>
+			<input type="checkbox" name=""> 
+		</p>
+		<p>
+			<label>Currículo Resumido:</label><br>
+			<textarea id="curr" rows="5" placeholder="Máximo de 200 caracteres..." style="width: 30em;"></textarea>
+		</p>
+
+		<p>
+			<input type="button" value="Cadastrar" onclick="validar()">
+		</p>
+
+		</fieldset>
+		
+	</form>
+
+</body>
+</html>
